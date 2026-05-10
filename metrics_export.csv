@@ -1,0 +1,9 @@
+Metric,Value,Trend,Model ID,Model,Time
+Validation Accuracy,0.942,RISING,M-702,ResNet-50-v2,14:32:10
+Training Loss,0.124,FALLING,M-702,ResNet-50-v2,14:31:55
+F1 Score,0.891,STABLE,M-698,EfficientNet-B0,14:30:22
+Recall,0.875,RISING,M-702,ResNet-50-v2,14:28:45
+Precision,0.912,STABLE,M-698,EfficientNet-B0,14:25:12
+Mean IoU,0.756,FALLING,M-654,UNet-v3,14:20:01
+Validation Accuracy,0.938,RISING,M-702,ResNet-50-v2,14:15:30
+Training Loss,0.131,FALLING,M-702,ResNet-50-v2,14:10:22
