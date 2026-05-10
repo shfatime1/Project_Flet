@@ -1,7 +1,3 @@
-"""
-reports.py - Reports management. SQLite əvəzinə API client istifadə edir.
-"""
-
 import csv
 import flet as ft
 from datetime import datetime
@@ -21,6 +17,9 @@ AVATAR_COLORS = {
 def reports_view(page: ft.Page, params, basket) -> ft.View:
     p = palette(page)
     go_to = basket["go_to"]
+
+    _role = (page.data.get("role") or "") if isinstance(page.data, dict) else ""
+    _is_admin = _role.upper() == "ADMIN"
 
     reports_data = api.get_reports()
     search_q   = {"v": page.data.get("search_query", "") if isinstance(page.data, dict) else ""}
@@ -527,6 +526,7 @@ def reports_view(page: ft.Page, params, basket) -> ft.View:
                 ft.OutlinedButton(
                     "Delete All",
                     icon=ft.Icons.DELETE_SWEEP_OUTLINED,
+                    visible=_is_admin,
                     style=ft.ButtonStyle(color={"": p["RED"]},
                                          side={"": ft.BorderSide(1, p["RED"])}),
                     on_click=confirm_delete_all_reports,
