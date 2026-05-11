@@ -1,7 +1,3 @@
-"""
-manage_model.py - Model management. SQLite əvəzinə API client istifadə edir.
-"""
-
 import flet as ft
 from views.theme import palette
 from views.sidebar import page_shell, show_snack

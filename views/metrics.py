@@ -1,10 +1,3 @@
-"""
-metrics.py - Real-time metric logs.
-• Each log can be clicked - the chart on the right updates.
-• Live search filtering.
-• Export CSV writes a file.
-"""
-
 import csv
 import flet as ft
 import flet.canvas as cv
@@ -61,9 +54,6 @@ def metrics_view(page: ft.Page, params, basket) -> ft.View:
     date_filter = {"v": "All Time"}   # Last 24h | Last 7 Days | Last 30 Days | All Time
     filtered_idx = list(range(len(LOGS)))  # filtered log indices
 
-    # Map each log to a "minutes ago" bucket using its index as a proxy
-    # LOGS[0] = most recent (14:32), LOGS[-1] = oldest (14:10)
-    # We treat index 0-1 as last 24h, 0-3 as last 7 days, 0-5 as last 30 days, all = all
     _DATE_IDX_MAP = {
         "Last 24h":   set(range(0, 2)),
         "Last 7 Days": set(range(0, 4)),

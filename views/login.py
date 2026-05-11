@@ -1,7 +1,3 @@
-"""
-login.py - Login page. SQLite əvəzinə API client istifadə edir.
-"""
-
 import flet as ft
 from api.client import login as api_login
 from views.theme import palette, is_dark, toggle_dark

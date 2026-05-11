@@ -1,7 +1,3 @@
-"""
-manage_dataset.py - Dataset management. SQLite əvəzinə API client istifadə edir.
-"""
-
 import flet as ft
 from datetime import datetime
 

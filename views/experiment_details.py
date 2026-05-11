@@ -1,8 +1,3 @@
-"""
-experiment_details.py - Experiment detail page.
-All buttons functional: Clone, Stop Training, Generate Report.
-"""
-
 import base64
 import flet as ft
 from datetime import datetime
@@ -11,7 +6,6 @@ from views.theme import palette
 from views.sidebar import page_shell, show_snack
 
 
-# ── Default data (if missing) ─────────────────────────────────────────────────
 DEFAULT_METRICS = [
     ("Accuracy",  "0.942", "2 mins ago",  [0.45,0.62,0.74,0.83,0.89,0.92,0.94]),
     ("Loss",      "0.041", "2 mins ago",  [0.92,0.74,0.58,0.41,0.28,0.18,0.10]),

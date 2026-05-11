@@ -1,7 +1,3 @@
-"""
-dashboard.py - System Overview. SQLite əvəzinə API client istifadə edir.
-"""
-
 import csv
 import flet as ft
 

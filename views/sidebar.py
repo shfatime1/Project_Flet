@@ -1,14 +1,3 @@
-"""
-sidebar.py – Shared shell for all authenticated pages.
-Changes:
-  - header shows real role badge from page.data["role"]
-  - sidebar hides Manage Users/Datasets/Models for non-Admin roles
-    (UML: only Admin can manage users, datasets, models)
-  - Viewer sees only: Dashboard, Experiments, Metrics, Reports
-  - Data Scientist sees: + Compare Experiments (no manage pages)
-  - Admin sees everything
-"""
-
 import flet as ft
 
 from views.theme import palette, is_dark, toggle_dark

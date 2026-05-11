@@ -1,6 +1,3 @@
-"""
-registration.py - Registration page. SQLite əvəzinə API client istifadə edir.
-"""
 import flet as ft
 from views.theme import palette, is_dark, toggle_dark
 from api.client import create_user as api_create_user

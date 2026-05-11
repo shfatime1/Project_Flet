@@ -1,8 +1,3 @@
-"""
-compare_experiments.py - Comparison of 3 experiments.
-All top buttons (Export Report / Share View / Recalculate) are functional.
-"""
-
 import csv
 import flet as ft
 import flet.canvas as cv

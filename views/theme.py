@@ -1,13 +1,3 @@
-"""
-theme.py - Centralized Light / Dark theme system
-=========================================================
-All views call `palette(page)` to get colors matching the current theme
-as a dict. Theme toggle is via `set_dark(page, True/False)`
-; the view should then be re-rendered.
-
-Palette keys are stable – views index into the dict.
-"""
-
 import flet as ft
 
 # ── Private palettes ────────────────────────────────────────────────────────

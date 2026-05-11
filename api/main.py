@@ -1,12 +1,3 @@
-"""
-api/main.py — Bütün SQLite əməliyyatlarını idarə edən tək FastAPI serveri.
-Flet tərəfi artıq heç bir yerdə sqlite3 import etmir — hamısı bu API vasitəsilə gedir.
-
-İstifadə:
-    cd Project_Flet
-    uvicorn api.main:app --reload --port 8000
-"""
-
 import os
 import sqlite3
 from datetime import datetime

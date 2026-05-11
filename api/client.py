@@ -1,8 +1,3 @@
-"""
-api/client.py — Bütün Flet view-larının istifadə etdiyi API klient.
-Bu fayl sqlite3 importunu tamamilə əvəz edir.
-"""
-
 import requests
 
 BASE_URL = "http://127.0.0.1:8000"

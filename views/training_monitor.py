@@ -1,9 +1,3 @@
-"""
-training_monitor.py - Real-time training console.
-Stop Training and Clear Console buttons functional.
-Light/dark theme is supported.
-"""
-
 import flet as ft
 
 from views.theme import palette
