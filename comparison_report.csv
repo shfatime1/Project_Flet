@@ -1,0 +1,14 @@
+Metric,EXP 1,EXP 2,EXP 3,Higher Better
+Accuracy,93.4%,96.2%,91.8%,Yes
+Loss,0.12,0.08,0.15,No
+F1 Score,0.92,0.95,0.89,Yes
+Recall,0.91,0.94,0.88,Yes
+
+Hyperparameter,EXP 1 (EXP-402),EXP 2 (EXP-405),EXP 3 (EXP-408)
+Learning Rate,0.0001,0.001,0.0005
+Batch Size,32,32,64
+Optimizer,Adam,Adam,SGD
+Epochs,50,50,100
+Weight Decay,1e-4,1e-4,1e-5
+Base Dataset,ImageNet-2023-v1,ImageNet-2023-v1,ImageNet-v2-Full
+GPU Architecture,NVIDIA A100,NVIDIA A100,NVIDIA H100
